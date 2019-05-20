@@ -1,0 +1,2 @@
+rootProject.name = 'spring-cloud-seeds'
+include 'spring-cloud-01-discovery-01-eureka-server'
