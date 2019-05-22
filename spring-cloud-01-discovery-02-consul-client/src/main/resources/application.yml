@@ -1,0 +1,16 @@
+server:
+  port: 8763
+
+spring:
+  application:
+    name: consul-client   #指定服务名
+
+  # consul 环境
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      enabled: true
+      discovery:
+        enabled: true
+        prefer-ip-address: true
