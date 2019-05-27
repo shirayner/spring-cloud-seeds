@@ -18,7 +18,11 @@ public class UserController {
 	 * @return
 	 */
 	@GetMapping("/{id}")
-	public String getUser1(@PathVariable("id") Long id){
+	public String getUser1(@PathVariable("id") Long id) throws Exception {
+		if(id == null || id <= 0){
+			throw new Exception("invalid parameter: id="+ id);
+		}
+
 		return "the user's id is: "+id;
 	}
 
