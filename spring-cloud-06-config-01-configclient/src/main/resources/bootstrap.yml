@@ -1,0 +1,7 @@
+spring:
+    cloud:
+        config:
+            uri: http://localhost:8768    # 配置中心地址
+            name: config-info             # 配置文件的名称
+            profile: dev                  # 哪个环境的环境
+            label: master                 # git 分支

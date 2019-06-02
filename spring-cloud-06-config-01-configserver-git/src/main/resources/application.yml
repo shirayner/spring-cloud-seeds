@@ -1,0 +1,14 @@
+server:
+  port: 8768
+
+spring:
+  application:
+    name: config-server-git
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:shirayner/spring-cloud-config-repository.git     # git 仓库地址
+          #username:                                                           # 若 git 仓库为私有的，则需要用户名密码
+          #password:
+          search-paths: v1                                                     # 指定要在git仓库的哪个路径（目录）下去搜索配置
